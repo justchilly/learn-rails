@@ -43,3 +43,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Justchilly added ruby version in accordance with page 66 of learn-rails.pdf
+ruby '2.1.0'
