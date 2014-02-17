@@ -1,5 +1,8 @@
+#this is the Owner model
+
 class Owner
 
+#these are methods
   def name
     name = 'Krazy Dazy'
   end
