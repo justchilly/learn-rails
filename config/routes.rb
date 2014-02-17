@@ -1,4 +1,5 @@
 LearnRails::Application.routes.draw do
-  post 'contact', to: 'contacts#process_form'
+  # the only is a restriction that only allows the New and Create routes
+  resources :contacts, only: [:new, :create]
   root to: 'visitors#new'
 end
