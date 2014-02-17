@@ -27,9 +27,9 @@ group :development do
 	gem 'sqlite3'
 end
 group :production do
-	gem 'pg'
-	gem 'rails_12factor'
-	gem 'thin'
+	gem 'pg' #postgreSQL because Heroku doesnt suppoer SQLite
+	gem 'rails_12factor' #logging and static assets
+	gem 'thin' #webserver
 end
 
 
