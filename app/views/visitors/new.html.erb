@@ -1,18 +1,48 @@
 <% content_for :title do %>JustChilly<% end %>
-<% content_for :description do %>Website of JustChilly<% end %> <section>
- <!--  <img src="http://lorempixel.com/1170/600/nightlife/1"> -->
- <%= image_tag "nepal_landscape.jpg" %>
- </section>
- <section>
-   <div class="column">
-     <h2>Stay in touch but out of reach.</h2>
-   </div>
-   <div class="column">
-<div class="form-centered">
-<%= simple_form_for @visitor do |f| %>
-<%= f.error_notification %>
-<%= f.input :email, label: false, :placeholder => 'Your email address...' %> <br/>
-<%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
-<% end %> </div>
-   </div>
- </section>
+<% content_for :description do %>Website of JustChilly<% end %>
+<section>
+	<!--  <img src="http://lorempixel.com/1170/600/nightlife/1"> -->
+	<%= image_tag "nepal_landscape.jpg" %>
+	<div class="panel">
+		<p>Some lovely hills in Nepal</p>
+	</div>
+</section>
+<section>
+    <div class="column">
+    	<h2>Stay in touch but out of reach.</h2>
+    </div>
+    <div class="column">
+		<div class="form-centered">
+		<%= simple_form_for @visitor do |f| %>
+		<%= f.error_notification %>
+		<%= f.input :email, label: false, :placeholder => 'Your email address...' %> <br/>
+		<%= f.button :submit, "Sign up for Ice Cream", :class => "submit" %>
+		<% end %> </div>
+    </div>
+</section>
+<section>
+	<div class="small-column">
+    	<div class="panel">
+    		<h4>Step 1:</h4>
+    		<p>Learn some RoR</p>
+    	</div>
+    </div>
+    <div class="small-column">
+    	<div class="panel">
+    		<h4>Step 2:</h4>
+    		<p>Figure out Foundation</p>
+    	</div>
+    </div>
+    <div class="small-column">
+    	<div class="callout panel">
+    		<h4>Step 3:</h4>
+    		<p>Scream for Ice Cream!</p>
+    	</div>
+    </div>
+</section>
+<section>
+	<div class="twelve-columns">
+		<h4>So what have we learned?</h4>
+		<p>Zurb’s Foundation is one of the most widely-used responsive frameworks available at the minute — and for good reason, too. With a flexible grid system, a seemingly endless features-list and a community working to push new and improved features as often as possible, you can see why.
+	</div>
+</section>

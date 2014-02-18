@@ -21,10 +21,19 @@
   @extend .columns;
   @extend .text-center;
   }
+@mixin four-columns-centered {
+  @extend .small-4;
+  @extend .columns;
+  @extend .text-left;
+  }
+
 // create your own classes
 // to make views framework-neutral
 .column {
   @include six-columns-centered;
+  }
+.small-column {
+  @include four-columns-centered;
   }
 .form {
   @include grid-column(6);
@@ -46,5 +55,5 @@ main {
 section {
   @extend .row;
   //was 20px in learn-rails
-  margin-top: 0px;
+  margin-top: 15px;
   }
