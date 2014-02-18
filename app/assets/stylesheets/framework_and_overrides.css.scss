@@ -45,5 +45,6 @@ main {
   }
 section {
   @extend .row;
-  margin-top: 20px;
+  //was 20px in learn-rails
+  margin-top: 0px;
   }
