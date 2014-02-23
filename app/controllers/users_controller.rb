@@ -14,9 +14,9 @@ class UsersController < ApplicationController
   end
 
 
-  #def new
-  #	@user = User.new
-  #end
+  def new
+  	@user = User.new
+  end
 
 private
 	def user_params
