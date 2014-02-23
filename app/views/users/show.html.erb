@@ -1,0 +1,17 @@
+
+<% content_for :title do @user.name end %>
+<section>
+	<div class="row">
+		<aside class="">
+			<section>
+				<h1>
+					<%= gravatar_for @user %>
+					<%= @user.name %>
+				</h1>
+			</section>
+		</aside>
+	</div>
+</section>
+
+
+<%= @user.name %>, <%= @user.email %>

@@ -1,6 +1,7 @@
 // import the CSS framework
 @import "foundation";
 
+
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
@@ -27,6 +28,8 @@
   @extend .text-left;
   }
 
+
+
 // create your own classes
 // to make views framework-neutral
 .column {
@@ -45,6 +48,12 @@
   @extend .button;
   @extend .radius;
   }
+.gravatar {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 // apply styles to HTML elements
 // to make views framework-neutral
 
