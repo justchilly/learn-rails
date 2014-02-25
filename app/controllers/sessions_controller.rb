@@ -17,8 +17,8 @@ class SessionsController < ApplicationController
 	end
 
 	def destroy
-		sign_out
-		redirect_to 'signin'
+		sign_out if signed_in?
+		redirect_to '/signin'
 	end
 
 
