@@ -5,7 +5,9 @@
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
-  line-height: 45px; }
+  line-height: 45px; 
+  //background-color: rgba(50,0,100,0.3);
+  }
 .top-bar .name a {
   font-weight: normal;
   color: white;

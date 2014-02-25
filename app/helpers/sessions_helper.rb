@@ -29,7 +29,7 @@ module SessionsHelper
   # end
 
 	def sign_out
-		#return unless signed_in?
+		return unless signed_in?
 		current_user.update_attribute(:remember_token, User.encrypt(User.new_remember_token))
 		#current_user.update_attribute(:remember_token, User.new_remember_token)
 		cookies.delete(:remember_token)
